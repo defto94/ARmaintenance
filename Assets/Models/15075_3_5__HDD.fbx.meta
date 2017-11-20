@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: fa3f2ac21b8b2c3448f53ca15bc1a39b
+timeCreated: 1510420512
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: blok_mexa0
+    100004: Cylinder00
+    100006: Loft01_FA0
+    100008: Loft01_FAC
+    100010: Loft02_FA0
+    100012: Loft02_FAC
+    100014: provodka20
+    100016: provodka30
+    100018: Tube01_FAC
+    100020: Tube02_FAC
+    100022: Tube03_FAC
+    100024: Tube04_FAC
+    100026: Tube05_FAC
+    100028: Tube06_FAC
+    100030: Tube07_FAC
+    100032: Tube08_FAC
+    100034: VBox01
+    100036: VBox02
+    100038: VBox03
+    100040: VBox04
+    100042: VBox05
+    100044: VBox06
+    100046: VBox07
+    100048: VBox08
+    100050: VBox09
+    100052: VBox10
+    100054: VBox11
+    100056: VCyl01
+    100058: VCyl02
+    100060: VCyl03
+    100062: VCyl04
+    100064: VCyl05
+    100066: VCyl06
+    100068: VCyl07
+    100070: VCyl08
+    100072: VCyl09
+    100074: VCyl10
+    100076: VCyl11
+    100078: VCyl12
+    100080: VCyl13
+    400000: //RootNode
+    400002: blok_mexa0
+    400004: Cylinder00
+    400006: Loft01_FA0
+    400008: Loft01_FAC
+    400010: Loft02_FA0
+    400012: Loft02_FAC
+    400014: provodka20
+    400016: provodka30
+    400018: Tube01_FAC
+    400020: Tube02_FAC
+    400022: Tube03_FAC
+    400024: Tube04_FAC
+    400026: Tube05_FAC
+    400028: Tube06_FAC
+    400030: Tube07_FAC
+    400032: Tube08_FAC
+    400034: VBox01
+    400036: VBox02
+    400038: VBox03
+    400040: VBox04
+    400042: VBox05
+    400044: VBox06
+    400046: VBox07
+    400048: VBox08
+    400050: VBox09
+    400052: VBox10
+    400054: VBox11
+    400056: VCyl01
+    400058: VCyl02
+    400060: VCyl03
+    400062: VCyl04
+    400064: VCyl05
+    400066: VCyl06
+    400068: VCyl07
+    400070: VCyl08
+    400072: VCyl09
+    400074: VCyl10
+    400076: VCyl11
+    400078: VCyl12
+    400080: VCyl13
+    2300000: blok_mexa0
+    2300002: Cylinder00
+    2300004: Loft01_FA0
+    2300006: Loft01_FAC
+    2300008: Loft02_FA0
+    2300010: Loft02_FAC
+    2300012: provodka20
+    2300014: provodka30
+    2300016: Tube01_FAC
+    2300018: Tube02_FAC
+    2300020: Tube03_FAC
+    2300022: Tube04_FAC
+    2300024: Tube05_FAC
+    2300026: Tube06_FAC
+    2300028: Tube07_FAC
+    2300030: Tube08_FAC
+    2300032: VBox01
+    2300034: VBox02
+    2300036: VBox03
+    2300038: VBox04
+    2300040: VBox05
+    2300042: VBox06
+    2300044: VBox07
+    2300046: VBox08
+    2300048: VBox09
+    2300050: VBox10
+    2300052: VBox11
+    2300054: VCyl01
+    2300056: VCyl02
+    2300058: VCyl03
+    2300060: VCyl04
+    2300062: VCyl05
+    2300064: VCyl06
+    2300066: VCyl07
+    2300068: VCyl08
+    2300070: VCyl09
+    2300072: VCyl10
+    2300074: VCyl11
+    2300076: VCyl12
+    2300078: VCyl13
+    3300000: blok_mexa0
+    3300002: Cylinder00
+    3300004: Loft01_FA0
+    3300006: Loft01_FAC
+    3300008: Loft02_FA0
+    3300010: Loft02_FAC
+    3300012: provodka20
+    3300014: provodka30
+    3300016: Tube01_FAC
+    3300018: Tube02_FAC
+    3300020: Tube03_FAC
+    3300022: Tube04_FAC
+    3300024: Tube05_FAC
+    3300026: Tube06_FAC
+    3300028: Tube07_FAC
+    3300030: Tube08_FAC
+    3300032: VBox01
+    3300034: VBox02
+    3300036: VBox03
+    3300038: VBox04
+    3300040: VBox05
+    3300042: VBox06
+    3300044: VBox07
+    3300046: VBox08
+    3300048: VBox09
+    3300050: VBox10
+    3300052: VBox11
+    3300054: VCyl01
+    3300056: VCyl02
+    3300058: VCyl03
+    3300060: VCyl04
+    3300062: VCyl05
+    3300064: VCyl06
+    3300066: VCyl07
+    3300068: VCyl08
+    3300070: VCyl09
+    3300072: VCyl10
+    3300074: VCyl11
+    3300076: VCyl12
+    3300078: VCyl13
+    4300000: blok_mexa0
+    4300002: Cylinder00
+    4300004: Loft01_FA0
+    4300006: Loft01_FAC
+    4300008: Loft02_FA0
+    4300010: Loft02_FAC
+    4300012: provodka20
+    4300014: provodka30
+    4300016: Tube01_FAC
+    4300018: Tube02_FAC
+    4300020: Tube03_FAC
+    4300022: Tube04_FAC
+    4300024: Tube05_FAC
+    4300026: Tube06_FAC
+    4300028: Tube07_FAC
+    4300030: Tube08_FAC
+    4300032: VBox01
+    4300034: VBox02
+    4300036: VBox03
+    4300038: VBox04
+    4300040: VBox05
+    4300042: VBox06
+    4300044: VBox07
+    4300046: VBox08
+    4300048: VBox09
+    4300050: VBox10
+    4300052: VBox11
+    4300054: VCyl01
+    4300056: VCyl02
+    4300058: VCyl03
+    4300060: VCyl04
+    4300062: VCyl05
+    4300064: VCyl06
+    4300066: VCyl07
+    4300068: VCyl08
+    4300070: VCyl09
+    4300072: VCyl10
+    4300074: VCyl11
+    4300076: VCyl12
+    4300078: VCyl13
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder00
+    second: {fileID: 2100000, guid: af9cf1e2fe5a1184e92501fc666915ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Loft01_FA0
+    second: {fileID: 2100000, guid: ffe5100557d542647aff5d008ff89654, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Loft01_FAC
+    second: {fileID: 2100000, guid: effaec49dbcdd75419eeeb83aab9b127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Loft02_FA0
+    second: {fileID: 2100000, guid: 4717503bacabd494fa3948e9115bbc5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Loft02_FAC
+    second: {fileID: 2100000, guid: 13de62026a562c347bc3b69eb797552b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube01_FAC
+    second: {fileID: 2100000, guid: 175bde962c1b77944b1bdc035b50ad20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube02_FAC
+    second: {fileID: 2100000, guid: e1e419870a7ea7147ab2de4e34fe7501, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube03_FAC
+    second: {fileID: 2100000, guid: 32b1cd38ae4b7d34a956726dfd342b44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube04_FAC
+    second: {fileID: 2100000, guid: 492da586abc593943b682d6ee6dbebde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube05_FAC
+    second: {fileID: 2100000, guid: f07a049967a91c0408526f2ee587c559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube06_FAC
+    second: {fileID: 2100000, guid: 4b9746c99a7012c4bb9292689c825a0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube07_FAC
+    second: {fileID: 2100000, guid: df16c514d2fd6d744a3cfa1067c7491c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube08_FAC
+    second: {fileID: 2100000, guid: ea22945d479f7654e8ac9c9fe663d7cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox01
+    second: {fileID: 2100000, guid: fc788a9e7cccdf945a67c094f423482e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox02
+    second: {fileID: 2100000, guid: 144fc1b2c55a5bc469dd9058efa5967a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox03
+    second: {fileID: 2100000, guid: b736cfc9fb3f85844a776ebcbe439736, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox04
+    second: {fileID: 2100000, guid: ed5b90290210f474c8699726d2a51ad0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox05
+    second: {fileID: 2100000, guid: 5da346dc07307ac43be7915fe16741a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox06
+    second: {fileID: 2100000, guid: 1b84a05dc77fa3846bf88858e1f5af56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox07
+    second: {fileID: 2100000, guid: da332bc088c67274a8c4975cf53bc5a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox08
+    second: {fileID: 2100000, guid: 52540e69323a6124f97f0c3a87fb5776, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox09
+    second: {fileID: 2100000, guid: 6918891adcb45d94ab7699f9db61ae9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox10
+    second: {fileID: 2100000, guid: e0a5cbe6892a3284c96bd1f0cae7d462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VBox11
+    second: {fileID: 2100000, guid: 365751a616ef6f34782b0d9622fd56ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl01
+    second: {fileID: 2100000, guid: dfd26a214bf4a7b4dbc42067ae1faa1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl02
+    second: {fileID: 2100000, guid: c82c370560eae7d4fb25c4ea96136731, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl03
+    second: {fileID: 2100000, guid: 7bf7ebb48b49d3443a65050c63bbaec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl04
+    second: {fileID: 2100000, guid: 004acf5eff288a040a60cd5d5504317e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl05
+    second: {fileID: 2100000, guid: 5d588a80f0459f643b4a9a7911914dd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl06
+    second: {fileID: 2100000, guid: 2be0ba6100b448d4ca784652e5586c77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl07
+    second: {fileID: 2100000, guid: 1a0dc3f3127d19747abf03e961fe47f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl08
+    second: {fileID: 2100000, guid: 0a42e474c9086c742b6ac2904e1876e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl09
+    second: {fileID: 2100000, guid: cea006e17b06d2746880e1174bc7486c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl10
+    second: {fileID: 2100000, guid: be841b6df418c8646a728a7883e52eb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl11
+    second: {fileID: 2100000, guid: effeab7de1381124c92f95f6e10fd0cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl12
+    second: {fileID: 2100000, guid: 9b23ab02404868a4699b90fe293effe7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VCyl13
+    second: {fileID: 2100000, guid: 56e11e6b2d989da41810e090a9d2b8e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blok_mexa0
+    second: {fileID: 2100000, guid: dc8ba7d7a35472d40939d6d9b25f64c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: provodka20
+    second: {fileID: 2100000, guid: 07e8491808cdda440a3cf2226bbac17b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: provodka30
+    second: {fileID: 2100000, guid: bdad81deca076f14aaefd93dd7ab6bac, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
