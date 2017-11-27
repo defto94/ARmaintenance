@@ -7,8 +7,8 @@ using UnityEngine.UI;
 
 public class HDDdetails : MonoBehaviour {
 
-    public Text detailsText;
-    public string detailsString = "Rozmiar dysku:  931,51  GB";
+    public TextMesh detailsText;
+    public string detailsString = "Pojemność dysku HDD: 931,51 GB";
 
     public GameObject HDD;
 
