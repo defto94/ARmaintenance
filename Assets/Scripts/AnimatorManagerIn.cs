@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class AnimatorManagerIn : MonoBehaviour
 {
-    private Animator modelAnimator;
     private Animator trayAnimator;
     private Animator pointerAnimator;
     private Animator diskAnimator;
@@ -30,7 +29,7 @@ public class AnimatorManagerIn : MonoBehaviour
     public void NextAnimation()
 
     {
-        buttonText.GetComponentInChildren<Text>().text = "Następny Krok";
+        buttonText.GetComponentInChildren<Text>().text = "Next Step";
         pointerAnimator.Play("ArrowOut");
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("ArrowOut"))
@@ -67,7 +66,7 @@ public class AnimatorManagerIn : MonoBehaviour
         {
             trayAnimator.Rebind();
             pointerAnimator.Rebind();
-            buttonText.GetComponentInChildren<Text>().text = "Włóż płytę";
+            buttonText.GetComponentInChildren<Text>().text = "Insert a disc";
         }
 
 

@@ -22,7 +22,7 @@ public class AnimatorManagerOut : MonoBehaviour {
     {
         pointerAnimator.Play("ArrowOut");
         diskAnimator.Play("DiskOnPlace");
-        buttonText.GetComponentInChildren<Text>().text = "Następny Krok";
+        buttonText.GetComponentInChildren<Text>().text = "Next Step";
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("ArrowOut"))
         {
@@ -56,7 +56,7 @@ public class AnimatorManagerOut : MonoBehaviour {
             pointerAnimator.Rebind();
             diskAnimator.Rebind();
             trayAnimator.Rebind();
-            buttonText.GetComponentInChildren<Text>().text = "Wyjmij płytę";
+            buttonText.GetComponentInChildren<Text>().text = "Remove a disc";
         }
     }
 }
