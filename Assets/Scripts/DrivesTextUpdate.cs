@@ -7,7 +7,8 @@ public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
 {
     public Button animationButtonIn;
     public Button animationButtonOut;
-    public GameObject DVD;
+    //public GameObject DVD;
+    GameObject DVD;
     bool isDiskInside = false;
     private PerformanceMonitorNetworkClient pm;
 
@@ -32,6 +33,7 @@ public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
     // Use this for initialization
     private void Start()
     {
+        DVD = GameObject.Find("Tray/DvdDisk2");
         pm = GameObject.Find("PerformanceMonitor").GetComponent<PerformanceMonitorNetworkClient>();
     }
 
@@ -47,13 +49,13 @@ public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
         {
             animationButtonIn.gameObject.SetActive(false);
             animationButtonOut.gameObject.SetActive(true);
-            DVD.transform.localPosition = new Vector3(-4.0f, 3.4f, 6.0f); //sprawdzic
+            DVD.transform.position = new Vector3(-4.0f, 3.4f, 6.0f); 
         }
         else
         {
             animationButtonOut.gameObject.SetActive(false);
             animationButtonIn.gameObject.SetActive(true);
-            DVD.transform.localPosition = new Vector3(-4, 410, 6); //sprawdzic
+            DVD.transform.position = new Vector3(-4, 410, 6); 
 
         }
     }
