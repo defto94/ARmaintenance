@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
 {
-    public Button animationButtonIn;
-    public Button animationButtonOut;
-    //public GameObject DVD;
-    GameObject DVD;
-    bool isDiskInside = false;
-    private PerformanceMonitorNetworkClient pm;
+    public bool animationStarted;
+    public GameObject CDmodel;
+    public GameObject ButtonAnimationIn;
+    public GameObject ButtonAnimationOut;
+    public GameObject animatedCDmodel;
+    public GameObject counterDiskIn;
+    public GameObject counterDiskOut;
 
+    private bool isDiskInside;
 
     public void UpdatePerformanceDisplay(PerformanceData data)
     {
@@ -24,6 +26,7 @@ public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
             if (drive.DriveType == DriveType.CDRom)
             {
                 isDiskInside = drive.IsReady;
+
             }
         }
 
@@ -33,30 +36,29 @@ public class DrivesTextUpdate : MonoBehaviour, IPerformanceMonitorDataHandler
     // Use this for initialization
     private void Start()
     {
-        DVD = GameObject.Find("Tray/DvdDisk2");
-        pm = GameObject.Find("PerformanceMonitor").GetComponent<PerformanceMonitorNetworkClient>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (!pm.IsOnline)
+        if (isDiskInside)
         {
-            animationButtonIn.gameObject.SetActive(false);
-            animationButtonOut.gameObject.SetActive(false);
+            ButtonAnimationIn.SetActive(false);
+            ButtonAnimationOut.SetActive(true);
+            counterDiskIn.SetActive(false);
+            counterDiskOut.SetActive(true);
         }
-        else if (isDiskInside)
+        else if (!isDiskInside)
         {
-            animationButtonIn.gameObject.SetActive(false);
-            animationButtonOut.gameObject.SetActive(true);
-            DVD.transform.position = new Vector3(-4.0f, 3.4f, 6.0f); 
-        }
-        else
-        {
-            animationButtonOut.gameObject.SetActive(false);
-            animationButtonIn.gameObject.SetActive(true);
-            DVD.transform.position = new Vector3(-4, 410, 6); 
 
+            ButtonAnimationIn.SetActive(true);
+            ButtonAnimationOut.SetActive(false);
+            counterDiskIn.SetActive(true);
+            counterDiskOut.SetActive(false);
         }
+
+        CDmodel.SetActive(isDiskInside && !animationStarted);
+
+
     }
 }

@@ -8,8 +8,7 @@ public class AnimatorManagerIn : MonoBehaviour
     private Animator trayAnimator;
     private Animator pointerAnimator;
     private Animator diskAnimator;
-    private GameObject buttonText;
-
+    private Text counterText;
 
     // Use this for initialization
     void Start()
@@ -17,7 +16,7 @@ public class AnimatorManagerIn : MonoBehaviour
         pointerAnimator = GameObject.Find("Pointer").GetComponent<Animator>();
         trayAnimator = GameObject.Find("Tray").GetComponent<Animator>();
         diskAnimator = GameObject.Find("DvdDisk2").GetComponent<Animator>();
-        buttonText = GameObject.Find("LaunchAnimationInButton");
+        counterText = GameObject.Find("CountAnimationTextIn").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -29,8 +28,8 @@ public class AnimatorManagerIn : MonoBehaviour
     public void NextAnimation()
 
     {
-        buttonText.GetComponentInChildren<Text>().text = "Next Step";
         pointerAnimator.Play("ArrowOut");
+        counterText.text = "1/6";
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("ArrowOut"))
         {
@@ -38,6 +37,7 @@ public class AnimatorManagerIn : MonoBehaviour
             pointerAnimator.Rebind();
             diskAnimator.Rebind();
             trayAnimator.Play("TrayOut");
+            counterText.text = "2/6";
         }
 
         if (trayAnimator.GetCurrentAnimatorStateInfo(0).IsName("TrayOut"))
@@ -46,6 +46,7 @@ public class AnimatorManagerIn : MonoBehaviour
             pointerAnimator.Rebind();
             trayAnimator.Play("OnPlace");
             diskAnimator.Play("DiskIn");
+            counterText.text = "3/6";
         }
 
         if (trayAnimator.GetCurrentAnimatorStateInfo(0).IsName("OnPlace"))
@@ -53,20 +54,22 @@ public class AnimatorManagerIn : MonoBehaviour
             trayAnimator.Play("OnPlace");
             pointerAnimator.Play("Arrow");
             diskAnimator.Play("DiskOnPlace");
+            counterText.text = "4/6";
         }
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Arrow"))
         {
             trayAnimator.Play("TrayIn");
             pointerAnimator.Rebind();
-            
+            counterText.text = "5/6";
         }
 
         if (trayAnimator.GetCurrentAnimatorStateInfo(0).IsName("TrayIn"))
         {
             trayAnimator.Rebind();
             pointerAnimator.Rebind();
-            buttonText.GetComponentInChildren<Text>().text = "Insert a disc";
+            diskAnimator.Rebind();
+            counterText.text = "6/6";
         }
 
 

@@ -9,25 +9,31 @@ public class AnimatorManagerOut : MonoBehaviour {
     private Animator trayAnimator;
     private Animator pointerAnimator;
     private Animator diskAnimator;
-    private GameObject buttonText;
+    public DrivesTextUpdate drivesUpdate;
+    private Text counterText;
 
     void Start () {
         pointerAnimator = GameObject.Find("Pointer").GetComponent<Animator>();
         trayAnimator = GameObject.Find("Tray").GetComponent<Animator>();
         diskAnimator = GameObject.Find("DvdDisk2").GetComponent<Animator>();
-        buttonText = GameObject.Find("LaunchAnimationOutButton");
+        ///drivesUpdate = GameObject.Find("DrivesText").GetComponent<DrivesTextUpdate>();
+        counterText = GameObject.Find("CountAnimationTextOut").GetComponent<Text>();
     }
 
     public void NextAnimation()
     {
+      
         pointerAnimator.Play("ArrowOut");
         diskAnimator.Play("DiskOnPlace");
-        buttonText.GetComponentInChildren<Text>().text = "Next Step";
+        drivesUpdate.animationStarted = true;
+        counterText.text = "1/6";
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("ArrowOut"))
         {
+            drivesUpdate.animationStarted = true;
             pointerAnimator.Rebind();
             trayAnimator.Play("TrayOut");
+            counterText.text = "2/6";
         }
 
         if (trayAnimator.GetCurrentAnimatorStateInfo(0).IsName("TrayOut"))
@@ -36,12 +42,14 @@ public class AnimatorManagerOut : MonoBehaviour {
             pointerAnimator.Rebind();
             trayAnimator.Play("OnPlace");
             diskAnimator.Play("DiskOut");
+            counterText.text = "3/6";
         }
 
         if (diskAnimator.GetCurrentAnimatorStateInfo(0).IsName("DiskOut"))
         {
             diskAnimator.Rebind();
             pointerAnimator.Play("Arrow");
+            counterText.text = "4/6";
         }
 
         if (pointerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Arrow"))
@@ -49,6 +57,7 @@ public class AnimatorManagerOut : MonoBehaviour {
             pointerAnimator.Rebind();
             diskAnimator.Rebind();
             trayAnimator.Play("TrayIn");
+            counterText.text = "5/6";
         }
 
         if (trayAnimator.GetCurrentAnimatorStateInfo(0).IsName("TrayIn"))
@@ -56,7 +65,9 @@ public class AnimatorManagerOut : MonoBehaviour {
             pointerAnimator.Rebind();
             diskAnimator.Rebind();
             trayAnimator.Rebind();
-            buttonText.GetComponentInChildren<Text>().text = "Remove a disc";
+            counterText.text = "6/6";
+
+            drivesUpdate.animationStarted = false;
         }
     }
 }
